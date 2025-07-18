@@ -92,6 +92,10 @@ async function editPdfAndSend({ inputPath, res, textboxes }) {
   });
 }
 
+app.get('/', (req, res) => {
+  res.send('Working...');
+});
+
 // Route: overlay text on remote PDF via URL
 app.post("/overlay-pdf", async (req, res) => {
   console.log(req.body);
